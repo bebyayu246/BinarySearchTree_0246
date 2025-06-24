@@ -46,4 +46,11 @@ class BinaryTree
             Node *currentNode = nullptr;
             search(x, parent, currentNode);
 
-   
+            //Step 5 : if parent the NULL, tree is empty
+            if (parent == nullptr){
+                //5a : Mark the new nood as ROOT
+                ROOT = newNode;
+                //5b : exit
+                return;
+            }
+           
