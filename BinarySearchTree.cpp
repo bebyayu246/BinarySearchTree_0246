@@ -25,7 +25,7 @@ class BinaryTree
             ROOT = nullptr; //intialize root to null
         }
 
-        void Insert()
+        void insert()
         {
             int x;
             cout << " Masukkan Nilai :";
@@ -85,3 +85,18 @@ class BinaryTree
                     currentNode = currentNode-> rightchild;
             }
         }
+
+        void inorder (Node *ptr) {
+            if(isEmpty()) {
+                cout << " Tree is empty " << endl;
+                return;
+            }
+            if(ptr == nullptr)
+            return;
+
+            inorder (ptr->leftchild);
+            cout << ptr->info << "";
+            inorder (ptr ->rightchild);
+        }
+
+         
