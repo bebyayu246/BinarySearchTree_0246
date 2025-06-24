@@ -62,4 +62,13 @@ class BinaryTree
                 //6b : exit
                 return;
             }
-            
+            //step 7: if the value in the data filed of the new node is greater than tahat of the parent 
+            else if(x > parent->info){
+                //7a:make the right child of parent point the new node
+                parent->rightchild = newNode;
+
+                //7b: exit
+                return;
+            }
+        }
+       
