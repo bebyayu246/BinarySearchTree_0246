@@ -53,4 +53,13 @@ class BinaryTree
                 //5b : exit
                 return;
             }
-           
+             //step 6: if the value in the data filed of new node is less than taht of parent
+            if (x < parent->info)
+            {
+                //6a: make the left child of parent point to the new node 
+                parent->leftchild = newNode;
+
+                //6b : exit
+                return;
+            }
+            
